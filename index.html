@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Магазин инструмента</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat sit numquam maxime voluptate provident quia ducimus pariatur eos? Corporis delectus asperiores doloremque officiis voluptatibus qui, nihil sunt eveniet iste.
+	<div class="wrap-preloder">
+        <div class="preloder">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="logo">
+					<a class="logo__link" href="/">
+						<img src="images/logo.png" alt="Магазин инструмента">
+						<span>Магазин инструмента</span>
+					</a>
+				</div>
+				<div class="header__content">
+					<div class="header__top">
+						<ul class="header__nav">
+							<li>
+								<a href="#">Каталог инструментов</a>
+							</li>
+							<li>
+								<a href="#">Все для сада</a>
+							</li>
+							<li>
+								<a href="#">Ручной инструмент</a>
+							</li>
+							<li>
+								<a href="#">Электрика</a>
+							</li>
+							<li>
+								<a href="#">Доставка</a>
+							</li>
+							<li>
+								<a href="#">Оплата</a>
+							</li>
+							<li>
+								<a href="#">О нас</a>
+							</li>
+						</ul>
+				
+						<div class="header__user">
+							<a href="#">Вход</a>
+							<span>|</span>
+							<a href="#">Регистрация</a>
+						</div>
+					</div>
+
+					<div class="header__middle">
+						<div class="header__banner">
+							<img src="images/banner.png" alt="banner">
+						</div>
+						<div class="header__buttons">
+							<a class="cart" href="#cart">3 шт. /  <span>17 250 р.</span></a>
+							<a class="wishlist" href="#wishlist">Избранное (7)</a>
+							<a class="comparison" href="#comparison">К сравнению (5)</a>
+						</div>
+						<div class="header-products">
+							<a href="#" class="header-products__item">
+								<img src="images/1.png" alt="">
+							</a>
+							<a href="#" class="header-products__item">
+								<img src="images/2.png" alt="">
+							</a>
+							<a href="#" class="header-products__item">
+								<img src="images/3.png" alt="">
+							</a>
+						</div>
+						<div class="header-info">
+							<div class="header-info__inner">
+								<div class="header-info__time">
+									<b>Время работы: </b>
+									<span>10:00 — 19:00</span>
+								</div>
+								<div class="header-info__phone">
+									<a href="tel:84957212525">8 495 721-25-25</a>
+								</div>
+								<div class="header-location">
+									<span class="header-location__city">Москва</span>
+									<span class="header-location__change">сменить</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-menu">
+				<span class="search"></span>
+				<nav class="menu">
+					<ul>
+						<li>
+							<a class="active" href="#">Перфораторы</a>
+						</li>
+						<li>
+							<a href="#">Дрели</a>
+						</li>
+						<li>
+							<a href="#">Шлифмашины</a>
+						</li>
+						<li>
+							<a href="#">Пистолеты</a>
+						</li>
+						<li>
+							<a href="#">Электропилы</a>
+						</li>
+						<li>
+							<a href="#">Наборы инструментов</a>
+						</li>
+						<li>
+							<a href="#">Аксессуары</a>
+						</li>
+					</ul>
+				</nav>
+
+				<a href="#" class="sell-out">Распродажа</a>
+			</div>
+		</div>
+	</header>
+
+	<script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			/* Preloder */
+			setTimeout(function() {
+				$('.wrap-preloder').fadeOut(100);
+			}, 600);
+		});
+	</script>
 </body>
 </html>
